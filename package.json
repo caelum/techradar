@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "docpad": "~6.52.1",
-    "docpad-plugin-ghpages": "~2.3.0"
+    "docpad-plugin-ghpages": "~2.3.0",
+    "docpad-plugin-handlebars": "~2.2.2"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
