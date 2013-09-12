@@ -1,10 +1,54 @@
-# DocPad Configuration File
-# http://docpad.org/docs/config
+pathUtil = require('path')
 
-# Define the DocPad Configuration
 docpadConfig = {
-	# ...
+    collections:
+        articles: ->
+            @getCollection("html").createChildCollection()
+                .setFilter('articles', (model) ->
+                    relativePath = pathUtil.dirname(model.attributes.fullPath).substr((__dirname+'/src/').length)
+                    return relativePath.indexOf('articles/') == 0
+                )
+                .live()
+                .on('add', (model) ->
+                    model.setMetaDefaults({layout:"article"})
+                )
+
+        tecnicas: ->
+            @getCollection("articles").createChildCollection()
+                .setFilter('tecnicas', (model) ->
+                    relativePath = model.attributes.relativeDirPath
+                    return relativePath.indexOf('/tecnicas') != -1
+                )
+                .live()
+
+        ferramentas: ->
+            @getCollection("articles").createChildCollection()
+                .setFilter('ferramentas', (model) ->
+                    relativePath = model.attributes.relativeDirPath
+                    return relativePath.indexOf('/ferramentas') != -1
+                )
+                .live()
+
+        linguagens: ->
+            @getCollection("articles").createChildCollection()
+                .setFilter('linguagens', (model) ->
+                    relativePath = model.attributes.relativeDirPath
+                    return relativePath.indexOf('/linguagens-e-frameworks') != -1
+                )
+                .live()
+
+        plataformas: ->
+            @getCollection("articles").createChildCollection()
+                .setFilter('plataformas', (model) ->
+                    relativePath = model.attributes.relativeDirPath
+                    return relativePath.indexOf('/plataformas') != -1
+                )
+                .live()
+
+    documentsPaths: [
+        'documents',
+        'articles'
+    ]
 }
 
-# Export the DocPad Configuration
 module.exports = docpadConfig

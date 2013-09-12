@@ -1,5 +1,2 @@
----
-layout: default
----
-<dt><%= @document.title %>
-<dd><%- @content %>
+<dt><%- @document.title %>
+<dd><%- @document.content %>

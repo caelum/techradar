@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<h2 class="quadrant-title">Técnincas</h2>
+<dl class="quadrant-list">
+<% for page in @getCollection("tecnicas").toJSON(): %>
+    <%- page.contentRendered %>
+<% end %>
+
+<h2 class="quadrant-title">Ferramentas</h2>
+<dl class="quadrant-list">
+<% for page in @getCollection("ferramentas").toJSON(): %>
+    <%- page.contentRendered %>
+<% end %>
+
+<h2 class="quadrant-title">Linguagens e Frameworks</h2>
+<dl class="quadrant-list">
+<% for page in @getCollection("linguagens").toJSON(): %>
+    <%- page.contentRendered %>
+<% end %>
+
+<h2 class="quadrant-title">Plataformas</h2>
+<dl class="quadrant-list">
+<% for page in @getCollection("plataformas").toJSON(): %>
+    <%- page.contentRendered %>
+<% end %>
