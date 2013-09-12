@@ -1,6 +1,42 @@
 ---
 layout: default
 ---
+
+<img class="hd-logo" src="http://www.caelum.com.br/imagens/caelum-ensino-e-inovacao.svg" />
+<h1>Caelum Technology Radar</h1>
+
+<h2>Sobre o Radar</h2>
+
+Nossa ideia ao criar esse radar era divulgar sobre ferramentas, práticas e processos que acreditamos. O oposto também é válido: divulgar tudo aquilo que, por algum motivo, não acreditamos mais.
+
+Todo o conteúdo deste documento é fortemente baseado na experiência e conhecimentos dos nossos colaboradores. Mas como qualquer discussão em engenharia de software, não há uma resposta única e exata. Antes de seguir o que está escrito aqui, o leitor deve analisar bem o contexto em que está envolvido.
+
+Nosso tech radar usa o <a href="http://martinfowler.com/articles/radar-faq.html">formato definido e utilizado</a> pela Thoughtworks em <a href="http://www.thoughtworks.com/radar">seus radares</a>.
+
+É importante que o leitor entenda como esse radar funciona. Os ítens foram classificados em práticas, ferramentas, plataformas, linguagens/frameworks. Cada uma dessas categorias encontra-se em uma das extremidades do radar.
+
+Além disso, cada ítem foi colocado em um anel, de acordo com nosso sentimento. Os anéis são:
+
+<dl>
+  <dt>Adopt / Adote</dt>
+  <dd>Nós acreditamos que esses ítens podem ser adotados pela indústria. Acreditamos
+  que a escolha desses ítens é, na maioria das vezes, acertada.</dd>
+
+  <dt>Trial / Experimente</dt>
+  <dd>Vale a pena testar em projetos menores ou com baixa criticidade.</dd>
+
+  <dt>Assess / Explore</dt>
+  <dd>Deve ser explorados com o objetivo de ver como se encaixa em sua empresa.</dd>
+
+  <dt>Hold / Evite</dt>
+  <dd>Os ítens que estão aqui devem ser evitados.</dd>
+</dl>
+
+Esta é a primeira vez que nos organizamos para gerar tal documento. Temos muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
+
+<h1 id="title" style="text-align: center;"></h1>
+<div id="radar"></div>
+
 <h2 class="quadrant-title">Técnincas</h2>
 <dl class="quadrant-list">
   <% for page in @getCollection("tecnicas").toJSON(): %>
