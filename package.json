@@ -10,7 +10,8 @@
     "docpad": "~6.52.1",
     "docpad-plugin-ghpages": "~2.3.0",
     "docpad-plugin-handlebars": "~2.2.2",
-    "docpad-plugin-eco": "~2.0.2"
+    "docpad-plugin-eco": "~2.0.2",
+    "docpad-plugin-partials": "~2.8.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
