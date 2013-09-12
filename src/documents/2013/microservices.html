@@ -1,0 +1,7 @@
+---
+title: Microservices
+quadrante: tecnicas
+---
+A quebra de um programa em diversas partes é uma das grandes discussões de modelagens. Em uma granularidade maior e pensando em responsabilidades distintas é possível dividir um sistema em outros menores. Mas com o passar do tempo percebemos empiricamente que a manutenção de tais sistemas fica cada vez mais complicada. A quebra em micro serviços é uma possibilidade que tem sido mais discutida nos últimos anos. Mas otimizar uma variável (no caso, o tamanho de cada serviço) pode complicar outra variável (por exemplo, a complexidade da comunicação).
+
+Se o que mais dói na evolução dos serviços é a evolução do protocolo de comunicação, há indícios de que seja interessante minimizar a complexidade da comunicação. Não estamos falando do uso de um formato mais simples, mas de minimizar a variedade (os tipos) de comunicações entre os sistemas. Se cada um deles é relativamente pequeno e auto-contido, a interface de comunicação pode ser mais simples e estável - e este pode ser um bom caminho para quem pretende trabalhar com serviços, independente de serem micro ou macro.
