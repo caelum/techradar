@@ -34,7 +34,6 @@ Além disso, cada ítem foi colocado em um anel, de acordo com nosso sentimento.
 
 Esta é a primeira vez que nos organizamos para gerar tal documento. Temos muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 
-<h1 id="title" style="text-align: center;"></h1>
 <div id="radar"></div>
 
 <%= @partial("quadrant-list", false, {title: "Técnicas", collection: @getCollection("tecnicas").toJSON()}) %>
