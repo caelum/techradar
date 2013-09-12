@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <%- @getBlock("styles").toHTML() %>
+  <%- @getBlock("styles").add(["/stylesheets/style.css"]).toHTML() %>
   <%- @getBlock("meta").toHTML() %>
   <title><%= @document.title %></title>
 </head>
-<body>
+<body onload="init(h,w)">
   <%- @content %>
-  <%- @getBlock("scripts").toHTML() %>
+  <%- @getBlock("scripts").add(["/scripts/protovis-d3.2.js", "/scripts/utils.js", "/scripts/radar.js", "/scripts/CaelumJul2013.js"]).toHTML() %>
 </body>
 </html>

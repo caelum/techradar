@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img class="hd-logo" src="http://www.caelum.com.br/imagens/caelum-ensino-e-inovacao.svg" />
+<img class="hd-logo" src="/images/caelum-ensino-e-inovacao.svg" />
 <h1>Caelum Technology Radar</h1>
 
 <h2>Sobre o Radar</h2>
