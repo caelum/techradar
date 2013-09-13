@@ -45,8 +45,10 @@ var radar_arcs = [
 // - Hold: things that are getting attention in the industry, but not ready for use; sometimes they are not mature enough yet, sometimes they are irredeemably flawed
 //      Note: there's no "avoid" ring, but throw things in the hold ring that people shouldn't use.
 
-var h = 1160;
-var w = 1200;
+var h = 900;
+var w = 900;
+
+//fazer o foreach com o echo aqui e adicionar atributos dinamicamente no json
 
 var radar_data = [
     { "quadrant": "Técnicas",
