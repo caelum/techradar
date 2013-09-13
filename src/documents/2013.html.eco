@@ -1,45 +1,51 @@
 ---
 layout: default
 ---
+<header>
+  <div class="container">
+    <img class="hd-logo" src="/images/caelum-ensino-e-inovacao.svg" />
+    <h1 class="title">Technology Radar</h1>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h2 class="section-title">Sobre o Radar</h2>
 
-<img class="hd-logo" src="/images/caelum-ensino-e-inovacao.svg" />
-<h1>Caelum Technology Radar</h1>
+    Nossa ideia ao criar esse radar era divulgar sobre ferramentas, práticas e processos que acreditamos. O oposto também é válido: divulgar tudo aquilo que, por algum motivo, não acreditamos mais.
 
-<h2>Sobre o Radar</h2>
+    Todo o conteúdo deste documento é fortemente baseado na experiência e conhecimentos dos nossos colaboradores. Mas como qualquer discussão em engenharia de software, não há uma resposta única e exata. Antes de seguir o que está escrito aqui, o leitor deve analisar bem o contexto em que está envolvido.
 
-Nossa ideia ao criar esse radar era divulgar sobre ferramentas, práticas e processos que acreditamos. O oposto também é válido: divulgar tudo aquilo que, por algum motivo, não acreditamos mais.
+    Nosso tech radar usa o <a href="http://martinfowler.com/articles/radar-faq.html">formato definido e utilizado</a> pela Thoughtworks em <a href="http://www.thoughtworks.com/radar">seus radares</a>.
 
-Todo o conteúdo deste documento é fortemente baseado na experiência e conhecimentos dos nossos colaboradores. Mas como qualquer discussão em engenharia de software, não há uma resposta única e exata. Antes de seguir o que está escrito aqui, o leitor deve analisar bem o contexto em que está envolvido.
+    É importante que o leitor entenda como esse radar funciona. Os ítens foram classificados em práticas, ferramentas, plataformas, linguagens/frameworks. Cada uma dessas categorias encontra-se em uma das extremidades do radar.
 
-Nosso tech radar usa o <a href="http://martinfowler.com/articles/radar-faq.html">formato definido e utilizado</a> pela Thoughtworks em <a href="http://www.thoughtworks.com/radar">seus radares</a>.
+    Além disso, cada ítem foi colocado em um anel, de acordo com nosso sentimento. Os anéis são:
 
-É importante que o leitor entenda como esse radar funciona. Os ítens foram classificados em práticas, ferramentas, plataformas, linguagens/frameworks. Cada uma dessas categorias encontra-se em uma das extremidades do radar.
+    <dl>
+      <dt>Adopt / Adote
+      <dd>Nós acreditamos que esses ítens podem ser adotados pela indústria. Acreditamos
+      que a escolha desses ítens é, na maioria das vezes, acertada.
 
-Além disso, cada ítem foi colocado em um anel, de acordo com nosso sentimento. Os anéis são:
+      <dt>Trial / Experimente
+      <dd>Vale a pena testar em projetos menores ou com baixa criticidade.
 
-<dl>
-  <dt>Adopt / Adote
-  <dd>Nós acreditamos que esses ítens podem ser adotados pela indústria. Acreditamos
-  que a escolha desses ítens é, na maioria das vezes, acertada.
+      <dt>Assess / Explore
+      <dd>Deve ser explorados com o objetivo de ver como se encaixa em sua empresa.
 
-  <dt>Trial / Experimente
-  <dd>Vale a pena testar em projetos menores ou com baixa criticidade.
+      <dt>Hold / Evite
+      <dd>Os ítens que estão aqui devem ser evitados.
+    </dl>
 
-  <dt>Assess / Explore
-  <dd>Deve ser explorados com o objetivo de ver como se encaixa em sua empresa.
+    Esta é a primeira vez que nos organizamos para gerar tal documento. Temos muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 
-  <dt>Hold / Evite
-  <dd>Os ítens que estão aqui devem ser evitados.
-</dl>
+    <div id="radar"></div>
 
-Esta é a primeira vez que nos organizamos para gerar tal documento. Temos muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
+    <%= @partial("quadrant-list", false, {title: "Técnicas", collection: @getCollection("tecnicas").toJSON()}) %>
 
-<div id="radar"></div>
+    <%= @partial("quadrant-list", false, {title: "Ferramentas", collection: @getCollection("ferramentas").toJSON()}) %>
 
-<%= @partial("quadrant-list", false, {title: "Técnicas", collection: @getCollection("tecnicas").toJSON()}) %>
+    <%= @partial("quadrant-list", false, {title: "Linguagens e Frameworks", collection: @getCollection("linguagens").toJSON()}) %>
 
-<%= @partial("quadrant-list", false, {title: "Ferramentas", collection: @getCollection("ferramentas").toJSON()}) %>
-
-<%= @partial("quadrant-list", false, {title: "Linguagens e Frameworks", collection: @getCollection("linguagens").toJSON()}) %>
-
-<%= @partial("quadrant-list", false, {title: "Plataformas", collection: @getCollection("plataformas").toJSON()}) %>
+    <%= @partial("quadrant-list", false, {title: "Plataformas", collection: @getCollection("plataformas").toJSON()}) %>
+  </div>
+</main>

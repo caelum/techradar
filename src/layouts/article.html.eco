@@ -1,2 +1,6 @@
-<dt><%- @document.title %>
-<dd><%- @document.content %>
+<article class="quadrant-article">
+  <h3 class="article-title">
+    <%- @document.title %>
+  </h3>
+  <%- @document.content %>
+</article>

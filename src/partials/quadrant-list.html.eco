@@ -1,6 +1,6 @@
-<h2 class="quadrant-title"><%- @title %></h2>
-<dl class="quadrant-list">
+<section class="quadrant">
+  <h2 class="quadrant-title"><%- @title %></h2>
   <% for page in @collection: %>
       <%- page.contentRendered %>
   <% end %>
-</dl>
+</section>
