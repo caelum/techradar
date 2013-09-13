@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Oxygen', 'sans-serif';
@@ -16,13 +16,13 @@ body {
   color: #686868;
 }
 
+header {
+  padding: 5em 0;
+}
+
 .container {
   max-width: 70em;
   margin: 0 auto;
-}
-
-header {
-  padding: 5em 0;
 }
 
 .header-logo,
@@ -51,6 +51,14 @@ header {
 .section-title,
 .quadrant-title {
   font-size: 3em;
+  width: 40%;
+}
+
+.quadrant-title {
+  float: left;
+  min-height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
 }
 
 .article-title {
@@ -60,6 +68,14 @@ header {
 .intro-list {
     margin: 2em 0;
 
+}
+
+.quadrant {
+  margin-top: 4em;
+}
+
+.quadrant-content {
+  overflow: hidden;
 }
 
 .quadrant-article {
@@ -74,17 +90,17 @@ header {
 
 #radar {
     font-size: .7em;
-    width: 100%;
+    width: 400px;
     text-align: center;
+    display: none !important;
 }
 
 .quadrant-title:before {
   content: "";
   height: 1.2em;
   width: .3em;
-  display: inline-block;
-  vertical-align: sub;
   margin-right: .2em;
+  float: left;
 }
 
 #tecnicas .quadrant-title:before {
@@ -97,6 +113,7 @@ header {
 
 #linguagens-e-frameworks .quadrant-title:before {
   background: #B70062;
+  height: 2em;
 }
 
 #plataformas .quadrant-title:before {

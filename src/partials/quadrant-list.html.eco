@@ -1,6 +1,8 @@
 <section class="quadrant" id="<%- @id %>">
   <h2 class="title quadrant-title"><%- @title %></h2>
-  <% for page in @collection: %>
-      <%- page.contentRendered %>
-  <% end %>
+  <div class="quadrant-content">
+    <% for page in @collection: %>
+        <%- page.contentRendered %>
+    <% end %>
+  </div>
 </section>
