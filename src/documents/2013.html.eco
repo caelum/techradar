@@ -3,8 +3,8 @@ layout: default
 ---
 <header>
   <div class="container">
-    <img class="hd-logo" src="/images/caelum-ensino-e-inovacao.svg" />
-    <h1 class="title">Technology Radar</h1>
+    <img class="header-logo" src="/images/caelum-ensino-e-inovacao.svg" />
+    <h1 class="header-title">Technology Radar</h1>
   </div>
 </header>
 <main>

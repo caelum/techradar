@@ -19,17 +19,18 @@ header {
   padding: 5em 0;
 }
 
-header .container > * {
+.header-logo,
+.header-title {
   display: inline-block;
   vertical-align: middle;
 }
 
-.hd-logo {
+.header-logo {
   width: 15em;
   margin-right: 4em;
 }
 
-header .title {
+.header-title {
   font-size: 5.5em;
 }
 
@@ -40,6 +41,10 @@ header .title {
 
 .article-title {
   font-size: 1.5em;
+}
+
+.quadrant-article {
+  padding: 1em 0;
 }
 
 .quadrant-article ul {
