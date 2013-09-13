@@ -1,6 +1,8 @@
 <article class="quadrant-article">
-  <h3 class="article-title">
+  <h3 class="label article-title">
     <%- @document.title %>
   </h3>
-  <%- @document.content %>
+  <div class="article-content">
+    <%- @document.content %>
+  </div>
 </article>

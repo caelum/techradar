@@ -1,5 +1,5 @@
 <section class="quadrant">
-  <h2 class="quadrant-title"><%- @title %></h2>
+  <h2 class="title quadrant-title"><%- @title %></h2>
   <% for page in @collection: %>
       <%- page.contentRendered %>
   <% end %>

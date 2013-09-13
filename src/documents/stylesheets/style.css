@@ -6,8 +6,14 @@
   font-size: inherit;
 }
 
+html{
+  height: 100%
+}
+
 body {
+  height: 100%
   font-size: 100%;
+  color: #686868;
 }
 
 .container {
@@ -30,6 +36,14 @@ header {
   margin-right: 4em;
 }
 
+.title {
+  color: #000;
+}
+
+.label {
+  font-weight: bold;
+}
+
 .header-title {
   font-size: 5.5em;
 }
@@ -40,7 +54,12 @@ header {
 }
 
 .article-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+
+.intro-list {
+    margin: 2em 0;
+
 }
 
 .quadrant-article {
@@ -51,4 +70,10 @@ header {
   list-style-position: inside;
   margin: 1em 0;
   list-style-type: square;
+}
+
+#radar {
+    font-size: .7em;
+    width: 100%;
+    text-align: center;
 }
