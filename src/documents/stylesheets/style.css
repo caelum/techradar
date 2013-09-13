@@ -77,3 +77,28 @@ header {
     width: 100%;
     text-align: center;
 }
+
+.quadrant-title:before {
+  content: "";
+  height: 1.2em;
+  width: .3em;
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: .2em;
+}
+
+#tecnicas .quadrant-title:before {
+  background: #8FA227;
+}
+
+#ferramentas .quadrant-title:before {
+  background: #587486;
+}
+
+#linguagens-e-frameworks .quadrant-title:before {
+  background: #B70062;
+}
+
+#plataformas .quadrant-title:before {
+  background: #DC6F1D;
+}

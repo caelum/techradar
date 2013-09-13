@@ -1,4 +1,4 @@
-<article class="quadrant-article">
+<article id=<%- @document.id %> class="quadrant-article">
   <h3 class="label article-title">
     <%- @document.title %>
   </h3>
