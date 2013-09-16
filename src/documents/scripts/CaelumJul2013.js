@@ -45,15 +45,15 @@ var radar_arcs = [
 // - Hold: things that are getting attention in the industry, but not ready for use; sometimes they are not mature enough yet, sometimes they are irredeemably flawed
 //      Note: there's no "avoid" ring, but throw things in the hold ring that people shouldn't use.
 
-var h = 900;
-var w = 900;
+var h = 802;
+var w = 802;
 
 //fazer o foreach com o echo aqui e adicionar atributos dinamicamente no json
 
 var radar_data = [
     { "quadrant": "Técnicas",
-        "left" : 45,
-        "top" : 18,
+        "left" : 0,
+        "top" : 0,
         "color" : "#8FA227",
         "items" : [
 			// hold
@@ -82,8 +82,8 @@ var radar_data = [
         ]
     },
     { "quadrant": "Ferramentas",
-        "left": w-200+30,
-        "top" : 18,
+        "left": w-200,
+        "top" : 0,
         "color" : "#587486",
         "items" : [
 			// hold
@@ -117,8 +117,8 @@ var radar_data = [
     },
     { "quadrant": "Ling./Frameworks",
     	"color" : "#B70062",
-    	"left"  : (w-200+30),
-         "top" : (h/2 + 18),
+    	"left"  : (w-200),
+      "top" : (h/2),
         "items" : [
            // hold
            {"name":"JSF 1.x", "pc":{"r":385,"t":310},"movement":"c"},
@@ -148,8 +148,8 @@ var radar_data = [
         ]
     },
     { "quadrant": "Plataformas",
-    	"left" :45,
-        "top" :   (h/2 + 18),
+    	"left": 0,
+        "top" :   (h/2),
         "color" : "#DC6F1D",
         "items" : [
            // assess

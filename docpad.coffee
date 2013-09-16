@@ -27,6 +27,7 @@ docpadConfig = {
                     relativePath = model.attributes.relativeDirPath
                     return relativePath.indexOf('/ferramentas') != -1
                 )
+                .setComparator({id: 1})
                 .live()
 
         linguagens: ->
@@ -49,6 +50,10 @@ docpadConfig = {
         'documents',
         'articles'
     ]
+
+    plugins:
+        livereload:
+            enabled: false
 }
 
 module.exports = docpadConfig

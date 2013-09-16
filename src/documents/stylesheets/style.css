@@ -11,7 +11,7 @@ html{
 }
 
 body {
-  height: 100%
+  height: 100%;
   font-size: 100%;
   color: #686868;
 }
@@ -44,6 +44,10 @@ header {
   font-weight: bold;
 }
 
+.muted {
+  opacity: 0.5;
+}
+
 .header-title {
   font-size: 5.5em;
 }
@@ -51,18 +55,21 @@ header {
 .section-title,
 .quadrant-title {
   font-size: 3em;
-  width: 40%;
+  width: 45%;
 }
 
 .quadrant-title {
   float: left;
   min-height: 1em;
   line-height: 1em;
-  vertical-align: middle;
 }
 
 .article-title {
   font-size: 1.3em;
+}
+
+.article-content {
+  display: block;
 }
 
 .intro-list {
@@ -72,6 +79,7 @@ header {
 
 .quadrant {
   margin-top: 4em;
+  min-height: 500px;
 }
 
 .quadrant-content {
@@ -90,9 +98,8 @@ header {
 
 #radar {
     font-size: .7em;
-    width: 400px;
+    overflow: hidden;
     text-align: center;
-    display: none !important;
 }
 
 .quadrant-title:before {

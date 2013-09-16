@@ -6,30 +6,28 @@ function init(h,w) {
       .canvas('radar')
 
   // arcs
-  radar.add(pv.Dot)
+  var arcs = radar.add(pv.Dot)
          .data(radar_arcs)
          .left(w/2)
          .bottom(h/2)
          .radius(function(d){return d.r;})
          .strokeStyle("#ccc")
-         .anchor("top")
-         .add(pv.Label).text(function(d) { return d.name;});
 
-  //quadrant lines -- vertical
-  radar.add(pv.Line)
-          .data([(h/2-radar_arcs[radar_arcs.length-1].r),h-(h/2-radar_arcs[radar_arcs.length-1].r)])
-          .lineWidth(1)
-          .left(w/2)
-          .bottom(function(d) {return d;})
-          .strokeStyle("#bbb");
+  // //quadrant lines -- vertical
+  // radar.add(pv.Line)
+  //         .data([(h/2-radar_arcs[radar_arcs.length-1].r),h-(h/2-radar_arcs[radar_arcs.length-1].r)])
+  //         .lineWidth(1)
+  //         .left(w/2)
+  //         .bottom(function(d) {return d;})
+  //         .strokeStyle("#bbb");
 
-  //quadrant lines -- horizontal
-  radar.add(pv.Line)
-          .data([(w/2-radar_arcs[radar_arcs.length-1].r),w-(w/2-radar_arcs[radar_arcs.length-1].r)])
-          .lineWidth(1)
-          .bottom(h/2)
-          .left(function(d) {return d;})
-          .strokeStyle("#bbb");
+  // //quadrant lines -- horizontal
+  // radar.add(pv.Line)
+  //         .data([(w/2-radar_arcs[radar_arcs.length-1].r),w-(w/2-radar_arcs[radar_arcs.length-1].r)])
+  //         .lineWidth(1)
+  //         .bottom(h/2)
+  //         .left(function(d) {return d;})
+  //         .strokeStyle("#bbb");
 
   // blips
   var total_index = 1;
@@ -82,7 +80,6 @@ function init(h,w) {
   //               .text(function(d) {return radar_quadrant_ctr++ + ". " + d.name;} );
   // }
 
- radar.anchor('radar');
  radar.render();
 
 };

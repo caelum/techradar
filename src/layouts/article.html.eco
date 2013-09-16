@@ -1,5 +1,5 @@
 <article id=<%- @document.id %> class="quadrant-article">
-  <h3 class="label article-title">
+  <h3 class="label article-title <%= if !@document.content then "muted" %> ">
     <%- @document.title %>
   </h3>
   <div class="article-content">
