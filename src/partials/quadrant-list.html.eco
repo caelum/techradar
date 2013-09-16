@@ -2,7 +2,7 @@
   <h2 class="title quadrant-title"><%- @title %></h2>
   <div class="quadrant-content">
     <% for page in @collection: %>
-        <%- page.contentRendered %>
+      <%- if page.content then page.contentRendered %>
     <% end %>
   </div>
 </section>

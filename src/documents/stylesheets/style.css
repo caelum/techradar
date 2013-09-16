@@ -69,7 +69,7 @@ header {
 }
 
 .article-content {
-  display: block;
+  display: none;
 }
 
 .intro-list {

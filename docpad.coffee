@@ -19,6 +19,7 @@ docpadConfig = {
                     relativePath = model.attributes.relativeDirPath
                     return relativePath.indexOf('/tecnicas') != -1
                 )
+                .setComparator({id: 1})
                 .live()
 
         ferramentas: ->
@@ -36,6 +37,7 @@ docpadConfig = {
                     relativePath = model.attributes.relativeDirPath
                     return relativePath.indexOf('/linguagens-e-frameworks') != -1
                 )
+                .setComparator({id: 1})
                 .live()
 
         plataformas: ->
@@ -44,6 +46,7 @@ docpadConfig = {
                     relativePath = model.attributes.relativeDirPath
                     return relativePath.indexOf('/plataformas') != -1
                 )
+                .setComparator({id: 1})
                 .live()
 
     documentsPaths: [
