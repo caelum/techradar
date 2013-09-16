@@ -1,0 +1,9 @@
+<nav id="radar-nav">
+  <%= @partial("radar-quadrant", false, {title: "Técnicas", id: "tecnicas-quadrant", color: "#8FA227", url: @document.url, collection: @getCollection("tecnicas").toJSON()}) %>
+
+  <%= @partial("radar-quadrant", false, {title: "Ferramentas", id: "ferramentas-quadrant", color: "#587486", url: @document.url, collection: @getCollection("ferramentas").toJSON()}) %>
+
+  <%= @partial("radar-quadrant", false, {title: "Linguagens e Frameworks", id: "linguagens-e-frameworks-quadrant", color: "#B70062", url: @document.url, collection: @getCollection("linguagens").toJSON()}) %>
+
+  <%= @partial("radar-quadrant", false, {title: "Plataformas", id: "plataformas-quadrant", color: "#DC6F1D", url: @document.url, collection: @getCollection("plataformas").toJSON()}) %>
+</nav>

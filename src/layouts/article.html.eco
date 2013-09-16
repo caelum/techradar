@@ -1,4 +1,4 @@
-<article id=<%- @document.basename %> class="quadrant-article">
+<article id="<%- if @document.isGroup then @document.id else @document.basename %>" class="quadrant-article">
   <h3 class="label article-title <%= if !@document.content then "muted" %> ">
     <%- @document.title %>
   </h3>

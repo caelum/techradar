@@ -1,0 +1,14 @@
+<ol class="radar-q" id="<%- @id %>">
+  <% for item in @collection: %>
+    <% if !item.isGroup: %>
+      <li>
+        <a
+          class= "radar-item <%= if !item.content and !item.groupId then "muted" %>"
+          title= "<%- item.title %>"
+          href= "<%- if item.groupId then "#{@url}##{item.groupId}" else "#{@url}##{item.basename}" %>"
+        >
+          <%- item.id %>
+        </a>
+    <% end %>
+  <% end %>
+</ol>

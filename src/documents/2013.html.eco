@@ -39,6 +39,8 @@ layout: default
 
     <div id="radar"></div>
 
+    <%= @partial("radar-area") %>
+
     <%= @partial("quadrant-list", false, {title: "Técnicas", id: "tecnicas", collection: @getCollection("tecnicas").toJSON()}) %>
 
     <%= @partial("quadrant-list", false, {title: "Ferramentas", id: "ferramentas", collection: @getCollection("ferramentas").toJSON()}) %>
