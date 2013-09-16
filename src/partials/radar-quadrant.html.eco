@@ -1,14 +1,11 @@
-<ol class="radar-q" id="<%- @id %>">
-  <% for item in @collection: %>
-    <% if !item.isGroup: %>
-      <li>
-        <a
-          class= "radar-item <%= if !item.content and !item.groupId then "muted" %>"
-          title= "<%- item.title %>"
-          href= "<%- if item.groupId then "#{@url}##{item.groupId}" else "#{@url}##{item.basename}" %>"
-        >
-          <%- item.id %>
-        </a>
-    <% end %>
-  <% end %>
-</ol>
+<% @hold = @collection.findAll({arc: "hold"}).toJSON() %>
+<% @trial = @collection.findAll({arc: "trial"}).toJSON() %>
+<% @assess = @collection.findAll({arc: "assess"}).toJSON() %>
+<% @adopt = @collection.findAll({arc: "adopt"}).toJSON() %>
+
+<section class="radar-quadrant" id="<%- @id %>">
+  <%= @partial("radar-section", false, {name: "hold", collection: @hold}, url: @document.url) %>
+  <%= @partial("radar-section", false, {name: "trial", collection: @trial}, url: @document.url) %>
+  <%= @partial("radar-section", false, {name: "assess", collection: @assess}, url: @document.url) %>
+  <%= @partial("radar-section", false, {name: "adopt", collection: @adopt}, url: @document.url) %>
+</section>

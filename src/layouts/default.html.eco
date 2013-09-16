@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <%- @getBlock("styles").add(["/stylesheets/style.css", "http://fonts.googleapis.com/css?family=Oxygen:400,300,700"]).toHTML() %>
+  <%- @getBlock("styles").add(["/stylesheets/radar.css", "/stylesheets/style.css", "http://fonts.googleapis.com/css?family=Oxygen:400,300,700"]).toHTML() %>
   <%- @getBlock("meta").toHTML() %>
   <title><%= @document.title %></title>
 </head>

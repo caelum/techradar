@@ -1,9 +1,9 @@
 <nav id="radar-nav">
-  <%= @partial("radar-quadrant", false, {title: "Técnicas", id: "tecnicas-quadrant", color: "#8FA227", url: @document.url, collection: @getCollection("tecnicas").toJSON()}) %>
+  <%= @partial("radar-quadrant", {title: "Técnicas", id: "quadrant-2", color: "#8FA227", collection: @getCollection("tecnicas")}) %><!--
 
-  <%= @partial("radar-quadrant", false, {title: "Ferramentas", id: "ferramentas-quadrant", color: "#587486", url: @document.url, collection: @getCollection("ferramentas").toJSON()}) %>
+  --><%= @partial("radar-quadrant", {title: "Ferramentas", id: "quadrant-1", color: "#587486",  collection: @getCollection("ferramentas")}) %><!--
 
-  <%= @partial("radar-quadrant", false, {title: "Linguagens e Frameworks", id: "linguagens-e-frameworks-quadrant", color: "#B70062", url: @document.url, collection: @getCollection("linguagens").toJSON()}) %>
+  --><%= @partial("radar-quadrant", {title: "Linguagens e Frameworks", id: "quadrant-3", color: "#B70062", collection: @getCollection("linguagens")}) %><!--
 
-  <%= @partial("radar-quadrant", false, {title: "Plataformas", id: "plataformas-quadrant", color: "#DC6F1D", url: @document.url, collection: @getCollection("plataformas").toJSON()}) %>
+  --><%= @partial("radar-quadrant", {title: "Plataformas", id: "quadrant-4", color: "#DC6F1D", collection: @getCollection("plataformas")}) %>
 </nav>
