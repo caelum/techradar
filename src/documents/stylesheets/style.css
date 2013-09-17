@@ -72,6 +72,10 @@ header {
   display: none;
 }
 
+.quadrant-article:target .article-content{
+  display: block;
+}
+
 .intro-list {
     margin: 2em 0;
 
