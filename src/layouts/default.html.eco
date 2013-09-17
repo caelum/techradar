@@ -6,8 +6,8 @@
   <%- @getBlock("meta").toHTML() %>
   <title><%= @document.title %></title>
 </head>
-<body onload="init(h,w)">
+<body>
   <%- @content %>
-  <%- @getBlock("scripts").add(["/vendor/protovis-d3.2.js", "/scripts/utils.js", "/scripts/radar.js", "/scripts/CaelumJul2013.js"]).toHTML() %>
+  <%- @getBlock("scripts").toHTML() %>
 </body>
 </html>

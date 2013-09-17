@@ -1,4 +1,4 @@
-<nav id="radar-nav">
+<nav id="radar">
   <!--
   <%= @partial("radar-quadrant", {title: "Técnicas", id: "quadrant-2", collection: @getCollection("tecnicas")}) %>
 
