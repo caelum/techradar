@@ -68,17 +68,19 @@ header {
   font-size: 1.3em;
 }
 
-.article-content {
-  display: none;
-}
-
 .quadrant-article:target .article-content{
   display: block;
 }
 
+.intro {
+  margin-bottom: 5em;
+}
+
 .intro-list {
     margin: 2em 0;
-
+    width: 40em;
+    border: 1px dashed;
+    padding: 1em 1.5em 2em;
 }
 
 .quadrant {
@@ -124,3 +126,23 @@ header {
 #plataformas .quadrant-title:before {
   background: #DC6F1D;
 }
+
+#radar-container {
+  background: #AFAFAF;
+}
+
+#radar-container {
+  padding: 4% 0;
+}
+
+.label-list{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 80em) {
+  .container {
+    max-width: 60em;
+  }
+}
+

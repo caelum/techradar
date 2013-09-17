@@ -1,64 +1,85 @@
-#radar {
-  height: 600px;
-  width: 600px;
+.radar {
+  height: 400px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: visible;
 }
 
 .radar-quadrant {
-  height: 49.7%;
-  width: 49.7%;
+  height: 50%;
+  width: 50%;
   display: inline-block;
   vertical-align: top;
-  position: relative;
+  position: absolute;
+  transition: all .2s linear 0;
+}
+
+.quadrant-1{
+  top: 0;
+  left: 50%;
+}
+
+.quadrant-2{
+  top: 0;
+  left: 0;
+}
+
+.quadrant-3{
+  top: 50%;
+  left: 0;
+}
+
+.quadrant-4{
+  top: 50%;
+  left: 50%;
+}
+
+.radar-quadrant .hold {
+  height: 100%;
+  width: 100%;
+}
+
+.radar-quadrant .trial {
+  width: 80%;
+  height: 80%;
+}
+
+.radar-quadrant .assess {
+  width: 55%;
+  height: 55%;
+}
+
+.radar-quadrant .adopt {
+  width: 30%;
+  height: 30%;
 }
 
 .radar-arc {
-  box-shadow: 0 0 0 1px #cdcdcd;
+  box-shadow: 0 0 0 1px #DDDDDD;
   position: absolute;
   background: #fff;
   list-style: none;
 }
 
-.radar-arc:hover {
-  background: #F3F3F3;
-}
-
-.hold {
-  height: 100%;
-  width: 100%;
-}
-
-.trial {
-  width: 80%;
-  height: 80%;
-}
-
-.assess {
-  width: 55%;
-  height: 55%;
-}
-
-.adopt {
-  width: 30%;
-  height: 30%;
-}
-
-#quadrant-2 .radar-arc{
+.quadrant-2 .radar-arc{
   border-radius: 100% 0 0 0;
   bottom: 0;
   right: 0;
 }
 
-#quadrant-1 .radar-arc{
+.quadrant-1 .radar-arc{
   border-radius: 0 100% 0 0;
   bottom: 0;
   left: 0;
 }
 
-#quadrant-4 .radar-arc{
+.quadrant-4 .radar-arc{
   border-radius: 0 0 100% 0;
 }
 
-#quadrant-3 .radar-arc{
+.quadrant-3 .radar-arc{
   border-radius: 0 0 0 100%;
   top: 0;
   right: 0;
@@ -70,7 +91,7 @@
 }
 
 .radar-link {
-  font-size: .8em;
+  font-size: .6em;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -85,18 +106,53 @@
   cursor: default;
 }
 
-#quadrant-2 .radar-link {
+.quadrant-2 .radar-link {
   background: #8FA227;
 }
 
-#quadrant-1 .radar-link {
+.quadrant-1 .radar-link {
   background: #587486;
 }
 
-#quadrant-4 .radar-link {
+.quadrant-4 .radar-link {
   background: #B70062;
 }
 
-#quadrant-3 .radar-link {
+.quadrant-3 .radar-link {
   background: #DC6F1D;
+}
+
+/*Effects*/
+
+.radar-quadrant:hover {
+  height: 70%;
+  width: 70%;
+}
+
+.radar-quadrant:hover .radar-link{
+  font-size: .8em;
+}
+
+.radar-quadrant:hover .radar-arc {
+  box-shadow: 0 0 0 1px #acacac;
+}
+
+#radar-container .quadrant-1:hover {
+  top: -22%;
+  left: 52%;
+}
+
+#radar-container .quadrant-2:hover {
+  top: -22%;
+  left: -22%;
+}
+
+#radar-container .quadrant-3:hover {
+  top: 52%;
+  left: -22%;
+}
+
+#radar-container .quadrant-4:hover {
+  top: 52%;
+  left: 52%;
 }

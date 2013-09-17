@@ -1,7 +1,7 @@
 <section class="quadrant" id="<%- @id %>">
   <h2 class="title quadrant-title"><%- @title %></h2>
   <div class="quadrant-content">
-    <% for page in @collection: %>
+    <% for page in @collection.toJSON(): %>
       <%- if page.content then page.contentRendered %>
     <% end %>
   </div>
