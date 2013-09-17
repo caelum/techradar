@@ -98,12 +98,6 @@
   background: #B70062;
 }
 
-#quadrant-3 .radar-item,
-#quadrant-4 .radar-item {
-  top: 100%;
-  text-align: right;
-}
-
 #quadrant-3 .radar-link {
   background: #DC6F1D;
 }
