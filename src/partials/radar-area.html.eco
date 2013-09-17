@@ -1,11 +1,12 @@
 <nav id="radar-nav">
   <!--
-  <%= @partial("radar-quadrant", {title: "Técnicas", id: "quadrant-2", color: "#8FA227", collection: @getCollection("tecnicas")}) %>
+  <%= @partial("radar-quadrant", {title: "Técnicas", id: "quadrant-2", collection: @getCollection("tecnicas")}) %>
 
-  <%= @partial("radar-quadrant", {title: "Ferramentas", id: "quadrant-1", color: "#587486",  collection: @getCollection("ferramentas")}) %>
+  <%= @partial("radar-quadrant", {title: "Ferramentas", id: "quadrant-1", collection: @getCollection("ferramentas")}) %>
 
-  <%= @partial("radar-quadrant", {title: "Linguagens e Frameworks", id: "quadrant-3", color: "#B70062", collection: @getCollection("linguagens")}) %>
+  <%= @partial("radar-quadrant", {title: "Plataformas", id: "quadrant-3", collection: @getCollection("plataformas")}) %>
 
-  <%= @partial("radar-quadrant", {title: "Plataformas", id: "quadrant-4", color: "#DC6F1D", collection: @getCollection("plataformas")}) %>
+  <%= @partial("radar-quadrant", {title: "Linguagens e Frameworks", id: "quadrant-4", collection: @getCollection("linguagens")}) %>
+
   -->
 </nav>
