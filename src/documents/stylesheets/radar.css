@@ -15,6 +15,7 @@
   box-shadow: 0 0 0 1px #cdcdcd;
   position: absolute;
   background: #fff;
+  list-style: none;
 }
 
 .hold {
@@ -27,18 +28,18 @@
 }
 
 .trial {
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: 80%;
 }
 
 .assess {
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
 }
 
 .adopt {
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
 }
 
 #quadrant-2 .radar-arc{
@@ -61,4 +62,36 @@
   border-radius: 0 0 0 100%;
   top: 0;
   right: 0;
+}
+
+.radar-item {
+  font-size: .8em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100%;
+}
+
+.radar-item.muted{
+  cursor: default;
+}
+
+#quadrant-2 .radar-item {
+  background: #8FA227;
+}
+
+#quadrant-1 .radar-item {
+  background: #587486;
+}
+
+#quadrant-4 .radar-item {
+  background: #B70062;
+}
+
+#quadrant-3 .radar-item {
+  background: #DC6F1D;
 }
