@@ -1,6 +1,6 @@
 #radar {
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
 }
 
 .radar-quadrant {
@@ -19,7 +19,7 @@
 }
 
 .radar-arc:hover {
-  background: #cdcdcd;
+  background: #F3F3F3;
 }
 
 .hold {
@@ -67,7 +67,6 @@
 .radar-item {
   display: inline-block;
   position: absolute;
-  margin: .15em;
 }
 
 .radar-link {
