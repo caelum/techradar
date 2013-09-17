@@ -1,9 +1,9 @@
 <ol class="radar-arc <%- @name %>">
   <% for item in @collection: %>
       <% if !item.isGroup: %>
-        <li>
+        <li id= "dot-<%- item.id %>" class="radar-item">
           <a
-            class= "radar-item <%= if !item.content and !item.groupId then "muted" %>"
+            class= "radar-link <%= if !item.content and !item.groupId then "muted" %>"
             title= "<%- item.title %>"
             href= "<%- if item.groupId then "#{@url}##{item.groupId}" else "#{@url}##{item.basename}" %>"
           >

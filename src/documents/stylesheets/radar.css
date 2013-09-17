@@ -18,13 +18,13 @@
   list-style: none;
 }
 
+.radar-arc:hover {
+  background: #cdcdcd;
+}
+
 .hold {
   height: 100%;
   width: 100%;
-}
-
-.radar-arc:hover {
-  background: #cdcdcd;
 }
 
 .trial {
@@ -65,6 +65,12 @@
 }
 
 .radar-item {
+  display: inline-block;
+  position: absolute;
+  margin: .15em;
+}
+
+.radar-link {
   font-size: .8em;
   display: table-cell;
   vertical-align: middle;
@@ -76,22 +82,28 @@
   border-radius: 100%;
 }
 
-.radar-item.muted{
+.radar-link.muted{
   cursor: default;
 }
 
-#quadrant-2 .radar-item {
+#quadrant-2 .radar-link {
   background: #8FA227;
 }
 
-#quadrant-1 .radar-item {
+#quadrant-1 .radar-link {
   background: #587486;
 }
 
-#quadrant-4 .radar-item {
+#quadrant-4 .radar-link {
   background: #B70062;
 }
 
-#quadrant-3 .radar-item {
+#quadrant-3 .radar-item,
+#quadrant-4 .radar-item {
+  top: 100%;
+  text-align: right;
+}
+
+#quadrant-3 .radar-link {
   background: #DC6F1D;
 }
