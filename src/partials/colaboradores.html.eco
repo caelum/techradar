@@ -1,0 +1,88 @@
+<% @gravatar = "http://gravatar.com/avatar/" %>
+
+<h2 class="title section-title">Participantes</h2>
+
+<p>Agradecemos a todos os colaboradores da Caelum que de alguma forma participaram da
+criação deste Radar.</p>
+
+<section class="organizers">
+	<h3 class="title label" >Organizadores</h3>
+	<ul class="colaborator-list">
+		<li class="colaborator">
+			<span class="colaborator-name">Mauricio Aniche</span>
+			<img src="<%= @gravatar %>77cc77ccdaf329705ce14a9d3ff1e8a8" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Cecilia Fernandes</span>
+			<img src="<%= @gravatar %>83caf77361748326fe960eeca984e1b3" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Guilherme Silveira</span>
+			<img src="<%= @gravatar %>641f736b59103127c7a6a46a683bca58" class="colaborator-img">
+	</ul>
+</section>
+
+<section class="colaborators">
+	<h3 class="title label">Colaboradores</h3>
+	<ul class="colaborator-list">
+		<li class="colaborator">
+			<span class="colaborator-name">Mario Amaral</span>
+			<img src="<%= @gravatar %>12cda4801087c9f98189391e81da6ee8" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Osni Oliveira</span>
+			<img src="<%= @gravatar %>f8874075c078dac246103618745aecb3" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Suelen Goularte Coelho</span>
+			<img src="<%= @gravatar %>0cf1603fb5f74fa40f6b6c96ca573db7" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Rodrigo Turini</span>
+			<img src="<%= @gravatar %>8757ffa706118c797421d81fdf2603e8" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Adriano Almeida</span>
+			<img src="<%= @gravatar %>1cf1528e1a5a780a4cbc60af969ba0a4" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Luiz Corte Real</span>
+			<img src="<%= @gravatar %>cde1dcc32eae2cc9ac8f9f05af6e994f" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Ricardo Valeriano</span>
+			<img src="<%= @gravatar %>aab63d0ace5e4e9ef4a145e07a46efc4" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Lucas Cavalcanti</span>
+			<img src="<%= @gravatar %>b7a066d98ed7cce6d286c99f0dd196a7" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">David Robert</span>
+			<img src="<%= @gravatar %>cdb85aa8ad814d404ebe981229d119e5" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">William Mizuta</span>
+			<img src="<%= @gravatar %>1949c7a944eae49e5345c57dda45bdb8" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">André Silva</span>
+			<img src="<%= @gravatar %>a21b21c2e84e20384baef4b9e3937257" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Alberto Souza</span>
+			<img src="<%= @gravatar %>4910f633b78fe129c1c34b61cadac7d8" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Natanael Pantoja</span>
+			<img src="<%= @gravatar %>c885ba5161ef63c1f1c0de27e7916760" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Artur Diniz Adam</span>
+			<img src="<%= @gravatar %>9672962b6d1293eb50ef73e1ba1ef615" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Leonardo Cesar Wolter</span>
+			<img src="<%= @gravatar %>e3dacc870dcf211ac0117efdeacdfc17" class="colaborator-img">
+	</ul>
+</section>
