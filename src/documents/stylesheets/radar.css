@@ -150,12 +150,20 @@
   opacity: 1;
 }
 
-.label-list {
-  list-style: none;
+.arc-labels {
   width: 8.9em;
   vertical-align: top;
   padding: 1em .3em;
   display: inline-block;
+}
+
+.arc-labels .title {
+  text-transform: capitalize;
+  margin-bottom: .3em;
+}
+
+.label-list {
+  list-style: none;
 }
 
 .label-list .label{
