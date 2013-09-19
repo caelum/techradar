@@ -8,6 +8,6 @@
 </head>
 <body>
   <%- @content %>
-  <%- @getBlock("scripts").add(["/scripts/radar-labels.js"]).toHTML() %>
+  <%- @getBlock("scripts").add(["/scripts/radar-labels.js", "/scripts/info-titles.js"]).toHTML() %>
 </body>
 </html>
