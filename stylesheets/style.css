@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', 'sans-serif';
+  font-weight: 300;
+  font-size: inherit;
+}
+
+html{
+  height: 100%
+}
+
+body {
+  height: 100%;
+  font-size: 100%;
+  color: #686868;
+}
+
+header {
+  padding: 5em 0;
+}
+
+p {
+  margin-top: 1.5em;
+  max-width: 50em;
+}
+
+.container {
+  max-width: 72em;
+  margin: 0 auto;
+}
+
+.header-logo,
+.header-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-logo {
+  width: 15em;
+  margin-right: 4em;
+}
+
+.title {
+  color: #000;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.muted {
+  opacity: 0.5;
+}
+
+.header-title {
+  font-size: 5.5em;
+}
+
+.section-title,
+.quadrant-title,
+.labels-title {
+  font-size: 3em;
+}
+
+.quadrant-title {
+  float: left;
+  min-height: 1em;
+  line-height: 1em;
+  width: 45%;
+}
+
+.article-title {
+  font-size: 1.3em;
+}
+
+.quadrant-article:target .article-content{
+  display: block;
+}
+
+.intro {
+  margin-bottom: 5em;
+}
+
+.intro-list {
+    margin: 2em 0;
+    width: 40em;
+    border: 1px dashed;
+    padding: 1em 1.5em 2em;
+}
+
+.info {
+  margin-top: 11em;
+}
+
+.quadrant-info {
+  margin-top: 4em;
+  min-height: 500px;
+  clear: left;
+}
+
+.quadrant-info:first-child {
+  margin-top: .2em;
+}
+
+.quadrant-content {
+  overflow: hidden;
+}
+
+.quadrant-article {
+  padding: 1em 0;
+}
+
+.quadrant-article ul {
+  list-style-position: inside;
+  margin: 1em 0;
+  list-style-type: square;
+}
+
+.quadrant-title:before {
+  content: "";
+  height: 1.2em;
+  width: .3em;
+  margin-right: .2em;
+  float: left;
+}
+
+#tecnicas .quadrant-title:before {
+  background: #8FA227;
+}
+
+#ferramentas .quadrant-title:before {
+  background: #587486;
+}
+
+#linguagens-e-frameworks .quadrant-title:before {
+  background: #B70062;
+  height: 2em;
+}
+
+#plataformas .quadrant-title:before {
+  background: #DC6F1D;
+}
+
+/*Colaborators*/
+.colaborators-container {
+  background: #464646;
+  padding: 5em 0;
+  margin-top: 5em;
+}
+
+.colaborators-container .title {
+  color: #acabab;
+}
+
+.colaborators-container p {
+  font-weight: 400;
+}
+
+.colaborators,
+.organizers {
+  margin-top: 5em;
+}
+
+.organizers {
+  margin-right: 2em;
+}
+
+.colaborator-list {
+  list-style: none;
+}
+
+.colaborator {
+  display: inline-block;
+}
+
+.colaborator {
+  margin-bottom: 1em;
+}
+
+.colaborator-name {
+  width: 10em;
+  text-align: right;
+  font-weight: 400;
+  margin-right: 1em;
+}
+
+.colaborator-img {
+  border-radius: 100%;
+}
+
+.colaborator-img,
+.colaborator-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*max-width: 1260px*/
+@media (max-width: 78.75em) {
+  .container {
+    max-width: 60em;
+    padding: 0 4em;
+}
+
+  #radar-container {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/*max-width: 1060px*/
+@media (max-width: 66.25em) {
+  /*tirar efeitios*/
+}
