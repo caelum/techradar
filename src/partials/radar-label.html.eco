@@ -1,0 +1,16 @@
+<% if @collection.length > 0  : %>
+  <ol class="label-list <%- @name %>">
+    <% for item in @collection: %>
+        <% if !item.isGroup: %>
+          <li id= "label-<%- item.id %>">
+            <a
+              href= "<%- if item.groupId then "#{@url}##{item.groupId}" else "#{@url}##{item.basename}" %>"
+              class= "radar-label <%= if !item.content and !item.groupId then "muted" %>"
+            >
+              <span class="label"><%- item.id %></span>
+              <span><%- item.title %></span>
+            </a>
+        <% end %>
+    <% end %>
+  </ol>
+<% end %>

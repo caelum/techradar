@@ -1,5 +1,4 @@
 <nav class="radar">
-  <!--
   <%= @partial("radar-quadrant", {title: "Técnicas", class: "quadrant-2", collection: @getCollection("tecnicas")}) %>
 
   <%= @partial("radar-quadrant", {title: "Ferramentas", class: "quadrant-1", collection: @getCollection("ferramentas")}) %>
@@ -7,5 +6,4 @@
   <%= @partial("radar-quadrant", {title: "Plataformas", class: "quadrant-3", collection: @getCollection("plataformas")}) %>
 
   <%= @partial("radar-quadrant", {title: "Linguagens e Frameworks", class: "quadrant-4", collection: @getCollection("linguagens")}) %>
-  -->
 </nav>

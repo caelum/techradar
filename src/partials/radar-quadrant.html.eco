@@ -2,7 +2,7 @@
 <% @trial = @collection.findAll({arc: "trial"}).toJSON() %>
 <% @assess = @collection.findAll({arc: "assess"}).toJSON() %>
 <% @adopt = @collection.findAll({arc: "adopt"}).toJSON() %>
---><section class="radar-quadrant <%- @class %>">
+<section class="quadrant <%- @class %>">
   <%= @partial("radar-section", false, {name: "hold", collection: @hold}, url: @document.url) %>
 
   <%= @partial("radar-section", false, {name: "trial", collection: @trial}, url: @document.url) %>
@@ -10,4 +10,4 @@
   <%= @partial("radar-section", false, {name: "assess", collection: @assess}, url: @document.url) %>
 
   <%= @partial("radar-section", false, {name: "adopt", collection: @adopt}, url: @document.url) %>
-</section><!--
+</section>

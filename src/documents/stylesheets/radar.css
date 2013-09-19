@@ -1,17 +1,24 @@
+#radar-container {
+  padding: 3em 0;
+  width: 100%;
+  min-height: 17.5em;
+  background: #204C64;
+}
+
+#radar-container .title {
+  color: #fff;
+}
+
 .radar {
   height: 400px;
   width: 400px;
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
-  overflow: visible;
+  float: left;
 }
 
-.radar-quadrant {
+.quadrant {
   height: 50%;
   width: 50%;
-  display: inline-block;
-  vertical-align: top;
   position: absolute;
   transition: all .2s linear 0;
 }
@@ -36,22 +43,22 @@
   left: 50%;
 }
 
-.radar-quadrant .hold {
+.quadrant .hold {
   height: 100%;
   width: 100%;
 }
 
-.radar-quadrant .trial {
+.quadrant .trial {
   width: 80%;
   height: 80%;
 }
 
-.radar-quadrant .assess {
+.quadrant .assess {
   width: 55%;
   height: 55%;
 }
 
-.radar-quadrant .adopt {
+.quadrant .adopt {
   width: 30%;
   height: 30%;
 }
@@ -61,6 +68,7 @@
   position: absolute;
   background: #fff;
   list-style: none;
+  transition: background .2s linear;
 }
 
 .quadrant-2 .radar-arc{
@@ -102,7 +110,8 @@
   border-radius: 100%;
 }
 
-.radar-link.muted{
+.radar-link.muted,
+.radar-label.muted {
   cursor: default;
 }
 
@@ -122,19 +131,51 @@
   background: #DC6F1D;
 }
 
+/*Labels*/
+
+.labels-container {
+  display: block;
+  overflow: hidden;
+  padding-left: 13%;
+}
+
+.quadrant-labels {
+  opacity: 0;
+  font-size: .9em;
+  position: absolute;
+  transition: all .2s linear;
+}
+
+.quadrant-labels.hovered {
+  opacity: 1;
+}
+
+.label-list {
+  list-style: none;
+  width: 8.9em;
+  vertical-align: top;
+  padding: 1em .3em;
+  display: inline-block;
+}
+
+.label-list .label{
+  margin-right: .5em;
+}
+
+.label-list .label:after {
+  content:  ".";
+}
+
+.radar-label {
+  text-decoration: none;
+  color: #fff;
+}
+
 /*Effects*/
 
-.radar-quadrant:hover {
+#radar-container .quadrant:hover {
   height: 70%;
   width: 70%;
-}
-
-.radar-quadrant:hover .radar-link{
-  font-size: .8em;
-}
-
-.radar-quadrant:hover .radar-arc {
-  box-shadow: 0 0 0 1px #acacac;
 }
 
 #radar-container .quadrant-1:hover {
@@ -155,4 +196,28 @@
 #radar-container .quadrant-4:hover {
   top: 52%;
   left: 52%;
+}
+
+.quadrant-1 .radar-arc:hover {
+  background: #E0E7E9;
+}
+
+.quadrant-2 .radar-arc:hover {
+  background: #EEF7D1;
+}
+
+.quadrant-3 .radar-arc:hover {
+  background: #F8ECDF;
+}
+
+.quadrant-4 .radar-arc:hover {
+  background: #F1DCEA;
+}
+
+.quadrant:hover .radar-arc {
+  box-shadow: 0 0 0 1px #acacac;
+}
+
+.quadrant:hover .radar-link{
+  font-size: .8em;
 }

@@ -1,0 +1,15 @@
+<% @hold = @collection.findAll({arc: "hold"}).toJSON() %>
+<% @trial = @collection.findAll({arc: "trial"}).toJSON() %>
+<% @assess = @collection.findAll({arc: "assess"}).toJSON() %>
+<% @adopt = @collection.findAll({arc: "adopt"}).toJSON() %>
+<div id="<%- @id %>" class="quadrant-labels">
+	<h2 class="title labels-title"><%- @title %></h2>
+
+  <%= @partial("radar-label", false, {name: "hold", collection: @hold, url: @document.url}) %>
+
+  <%= @partial("radar-label", false, {name: "trial", collection: @trial, url: @document.url}) %>
+
+  <%= @partial("radar-label", false, {name: "assess", collection: @assess, url: @document.url}) %>
+
+  <%= @partial("radar-label", false, {name: "adopt", collection: @adopt, url: @document.url}) %>
+</div>

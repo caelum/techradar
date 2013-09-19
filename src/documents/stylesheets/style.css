@@ -53,15 +53,16 @@ header {
 }
 
 .section-title,
-.quadrant-title {
+.quadrant-title,
+.labels-title {
   font-size: 3em;
-  width: 45%;
 }
 
 .quadrant-title {
   float: left;
   min-height: 1em;
   line-height: 1em;
+  width: 45%;
 }
 
 .article-title {
@@ -83,9 +84,18 @@ header {
     padding: 1em 1.5em 2em;
 }
 
-.quadrant {
+.info {
+  margin-top: 11em;
+}
+
+.quadrant-info {
   margin-top: 4em;
   min-height: 500px;
+  clear: left;
+}
+
+.quadrant-info:first-child {
+  margin-top: .2em;
 }
 
 .quadrant-content {
@@ -127,22 +137,21 @@ header {
   background: #DC6F1D;
 }
 
-#radar-container {
-  background: #AFAFAF;
-}
-
-#radar-container {
-  padding: 4% 0;
-}
-
-.label-list{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-@media (max-width: 80em) {
+/*max-width: 1260px*/
+@media (max-width: 78.75em) {
   .container {
-    max-width: 60em;
+    width: 60em;
+
+    padding: 0 5em;
+}
+
+  #radar-container {
+    display: inline-block;
+    width: 100%;
   }
 }
 
+/*max-width: 1060px*/
+@media (max-width: 66.25em) {
+  /*tirar efeitios*/
+}

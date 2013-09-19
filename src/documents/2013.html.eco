@@ -16,10 +16,19 @@ layout: default
   <div id="radar-container">
     <div class="container">
       <%= @partial("radar-area") %>
-    </div>
-  </div>
+      <div class="labels-container">
+          <%= @partial("label-list", {title: "Técnicas" , id: "quadrant-2-labels", collection: @getCollection("tecnicas")}) %>
 
-  <div class="container">
+          <%= @partial("label-list", {title: "Ferramentas", id: "quadrant-1-labels", collection: @getCollection("ferramentas")}) %>
+
+          <%= @partial("label-list", {title: "Plataformas", id: "quadrant-3-labels", collection: @getCollection("plataformas")}) %>
+
+          <%= @partial("label-list", {title: "Linguagens e Frameworks", id: "quadrant-4-labels", collection: @getCollection("linguagens")}) %>
+      </div>
+    </div>
+  </div><!--
+
+  --><div class="info container">
     <%= @partial("quadrant-list", false, {title: "Técnicas", id: "tecnicas", collection: @getCollection("tecnicas")}) %>
 
     <%= @partial("quadrant-list", false, {title: "Ferramentas", id: "ferramentas", collection: @getCollection("ferramentas")}) %>
