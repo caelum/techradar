@@ -12,7 +12,8 @@
     "docpad-plugin-handlebars": "~2.2.2",
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-partials": "~2.8.0",
-    "docpad-plugin-livereload": "~2.5.3"
+    "docpad-plugin-livereload": "~2.5.3",
+    "docpad-plugin-cleanurls": "~2.5.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
