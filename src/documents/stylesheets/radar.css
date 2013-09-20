@@ -143,11 +143,13 @@
   opacity: 0;
   font-size: .9em;
   position: absolute;
+  visibility: hidden;
   transition: all .2s linear;
 }
 
 .quadrant-labels.hovered {
   opacity: 1;
+  visibility: visible;
 }
 
 .arc-labels {
