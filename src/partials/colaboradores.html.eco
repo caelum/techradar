@@ -87,7 +87,7 @@ criação deste Radar.</p>
 
 		<li class="colaborator">
 			<span class="colaborator-name">Francisco Sokol</span>
-			<img src="<%= @gravatar %>d0636150f7a04239ac026232493eb787" class="colaborator-img">
+			<img src="<%= @gravatar %>fa0972f9231939796f0115afaf0cbf30" class="colaborator-img">
 
 		<li class="colaborator">
 			<span class="colaborator-name">Sérgio Lopes</span>
