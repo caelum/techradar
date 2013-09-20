@@ -1,6 +1,5 @@
 ---
 layout: default
-isHomePage: true
 ---
 <header>
   <div class="container">

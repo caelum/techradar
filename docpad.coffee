@@ -58,15 +58,9 @@ docpadConfig = {
         livereload:
             enabled: false
         alias:
-            hard: true
+            hard: false
             symlink: true
-            aliases: { '/set-2013.html': '/index.html' }
-
-    templateData:
-        site:
-            title: "My Website"
-
-        getUrl: -> if @document.isHomePage then "/" else @document.url
+            aliases: { '/set-2013': '/' }
 }
 
 module.exports = docpadConfig

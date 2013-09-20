@@ -5,7 +5,7 @@
           <a
             class= "radar-link <%= if !item.content and !item.groupId then "muted" %>"
             title= "<%- item.title %>"
-            href= "<%- if item.groupId then "#{@url}##{item.groupId}" else "#{@url}##{item.basename}" %>"
+            href= "<%- if item.groupId then "##{item.groupId}" else "##{item.basename}" %>"
           >
             <%- item.id %>
           </a>

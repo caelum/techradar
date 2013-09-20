@@ -231,3 +231,5 @@
 .quadrant:hover .radar-link{
   font-size: .8em;
 }
+
+/*deixar os label-titles como display block, e os label-list como display none, aplicar a classe hovered que deixara tudo absolute, o resto com opacity 0*/
