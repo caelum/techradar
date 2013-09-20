@@ -85,9 +85,13 @@ criação deste Radar.</p>
 			<span class="colaborator-name">Leonardo Cesar Wolter</span>
 			<img src="<%= @gravatar %>e3dacc870dcf211ac0117efdeacdfc17" class="colaborator-img">
 
-			<li class="colaborator">
-				<span class="colaborator-name">Francisco Sokol</span>
-				<img src="<%= @gravatar %>d0636150f7a04239ac026232493eb787" class="colaborator-img">
+		<li class="colaborator">
+			<span class="colaborator-name">Francisco Sokol</span>
+			<img src="<%= @gravatar %>d0636150f7a04239ac026232493eb787" class="colaborator-img">
+
+		<li class="colaborator">
+			<span class="colaborator-name">Sérgio Lopes</span>
+			<img src="<%= @gravatar %>3244c236c487924b4309fdd53cbb8633" class="colaborator-img">
 				
 	</ul>
 </section>
