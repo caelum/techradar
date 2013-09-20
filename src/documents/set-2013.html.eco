@@ -39,9 +39,6 @@ layout: default
   </div>
 </main>
 <footer>
-  <section class="colaborators-container">
-    <div class="container">
-      <%= @partial("colaboradores", false) %>
-    </div>
-  </section>
+  <%= @partial("colaboradores", false) %>
+  <%= @partial("footer-bottom", false) %>
 </footer>

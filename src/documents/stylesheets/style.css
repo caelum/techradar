@@ -83,10 +83,10 @@ p {
 }
 
 .intro-list {
-    margin: 2em 0;
-    width: 40em;
-    border: 1px dashed;
-    padding: 1em 1.5em 2em;
+  margin: 2em 0;
+  width: 40em;
+  border: 1px dashed;
+  padding: 1em 1.5em 2em;
 }
 
 .info {
@@ -97,10 +97,6 @@ p {
   margin-top: 4em;
   min-height: 500px;
   clear: left;
-}
-
-.quadrant-info:first-child {
-  margin-top: .2em;
 }
 
 .quadrant-content {
@@ -194,6 +190,71 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
+
+/*Footer*/
+.footer-bottom{
+  padding: 2em 0;
+  background: #206297;
+  text-align: center;
+}
+
+.sponsor-box {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  text-align: center;
+  min-width: 225px;
+}
+
+.footer-logo {
+  font-size: 0;
+  display: inline-block;
+  background-image: url("../images/footer-sprite.png");
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 5% 0;
+  height: 53px;
+}
+
+.footer-bottom .first-logo {
+  background-position: 0 -54px;
+  width: 124px;
+}
+
+.footer-bottom .second-logo {
+  background-position: 0 -107px;
+  width: 170px;
+}
+
+.footer-bottom .third-logo {
+  background-position: 0 0;
+  width: 183px;
+}
+
+.footer-sub-list {
+  padding-bottom: .6em;
+  list-style: none;
+}
+
+.footer-sub-list .footer-list-item {
+  display: inline;
+  margin-left: .3em;
+}
+.footer-sub-list .footer-list-item:first-child {
+  margin-left: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: .85em;
+  font-weight: 400;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 
 /*max-width: 1260px*/
 @media (max-width: 78.75em) {
