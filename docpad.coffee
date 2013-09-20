@@ -57,6 +57,10 @@ docpadConfig = {
     plugins:
         livereload:
             enabled: false
+        alias:
+            hard: true
+            symlink: true
+            aliases: { '/set-2013.html': '/index.html' }
 }
 
 module.exports = docpadConfig
