@@ -61,6 +61,12 @@ docpadConfig = {
             hard: true
             symlink: true
             aliases: { '/set-2013.html': '/index.html' }
+
+    templateData:
+        site:
+            title: "My Website"
+
+        getUrl: -> if @document.isHomePage then "/" else @document.url
 }
 
 module.exports = docpadConfig

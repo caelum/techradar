@@ -5,11 +5,11 @@
 <div id="<%- @id %>" class="quadrant-labels">
 	<h2 class="title labels-title"><%- @title %></h2>
 
-  <%= @partial("radar-label", false, {name: "hold", collection: @hold, url: @document.url}) %>
+  <%= @partial("radar-label", false, {name: "hold", collection: @hold, url: @getUrl()}) %>
 
-  <%= @partial("radar-label", false, {name: "trial", collection: @trial, url: @document.url}) %>
+  <%= @partial("radar-label", false, {name: "trial", collection: @trial, url: @getUrl()}) %>
 
-  <%= @partial("radar-label", false, {name: "assess", collection: @assess, url: @document.url}) %>
+  <%= @partial("radar-label", false, {name: "assess", collection: @assess, url: @getUrl()}) %>
 
-  <%= @partial("radar-label", false, {name: "adopt", collection: @adopt, url: @document.url}) %>
+  <%= @partial("radar-label", false, {name: "adopt", collection: @adopt, url: @getUrl()}) %>
 </div>
