@@ -57,12 +57,6 @@ docpadConfig = {
     plugins:
         livereload:
             enabled: false
-
-    environments:
-        static:
-            templateData:
-                site:
-                    url: "http://caelum.github.io/techradar"
 }
 
 module.exports = docpadConfig
