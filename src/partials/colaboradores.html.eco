@@ -25,7 +25,7 @@
 		</section>
 
 		<section class="colaborators">
-			<h3 class="title label">Colaboradores</h3>
+			<h3 class="title label">Participantes</h3>
 			<ul class="colaborator-list">
 				<li class="colaborator">
 					<span class="colaborator-name">Mario Amaral</span>
@@ -89,7 +89,7 @@
 
 				<li class="colaborator">
 					<span class="colaborator-name">Francisco Sokol</span>
-					<img src="<%= @gravatar %>d0636150f7a04239ac026232493eb787" class="colaborator-img">
+					<img src="<%= @gravatar %>fa0972f9231939796f0115afaf0cbf30" class="colaborator-img">
 
 				<li class="colaborator">
 					<span class="colaborator-name">Sérgio Lopes</span>

@@ -78,6 +78,10 @@ p {
   display: block;
 }
 
+.article-content {
+	white-space: pre-line;
+}
+
 .intro {
   margin-bottom: 5em;
 }
