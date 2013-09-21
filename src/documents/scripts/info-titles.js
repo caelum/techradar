@@ -1,44 +1,57 @@
-var info_sections = document.querySelectorAll('.quadrant-info')
-var previousScrollPosition, scroll_state
-var current_position = 0
+var previousScrollPosition, scroll_state,
+		info_sections = document.getElementsByClassName('quadrant-info'),
+	 	current_position = 0,
+	 	didScroll = false,
 
-function cloneTitles() {
-	for(var i = 0; i < info_sections.length; i++){
-		var section = info_sections.item(i)
-		var title = section.querySelector(".quadrant-title")
-		var clonedTitle = title.cloneNode(true)
-		var classess = clonedTitle.className.split(' ')
-		classess.push('sticky-title-' + i, 'sticky-title')
-		clonedTitle.className = classess.join(' ')
-		section.insertBefore(clonedTitle, title)
-		title.style.opacity = "0"
-	}
-}
-cloneTitles()
+		titlesList = (function() {
+			var list = []
+			for(var i = 0; i < info_sections.length; i++){
+				var section = info_sections[i],
+						title = section.getElementsByClassName("quadrant-title")[0],
+						clonedTitle = title.cloneNode(true),
+						classess = clonedTitle.className.split(' ')
+				classess.push('sticky-title')
+				clonedTitle.className = classess.join(' ')
+				section.insertBefore(clonedTitle, title)
+				list.push(clonedTitle)
+				title.style.opacity = "0"
+			}
+			return list
+		})(),
 
-var current_section = function(){
-	return info_sections.item(current_position)
-}
+		contentList = (function() {
+			var list = []
+			for(var i = 0; i < info_sections.length; i++){
+				list.push(
+					info_sections[i].getElementsByClassName("quadrant-content")[0].lastElementChild
+				)
+			}
+			return list
+		})(),
 
-var current_title = function(){
-	return current_section().querySelector(".sticky-title-"+ current_position)
-}
+		current_section = function(){
+			return info_sections[current_position]
+		},
 
-var last_article = function(){
-	return current_section().querySelector(".quadrant-content").lastElementChild
-}
+		current_title = function(){
+			return titlesList[current_position]
+		},
 
-var top_orig_offset = function(){
-	return current_section().offsetTop
-}
+		last_article = function(){
+			return contentList[current_position]
+		},
 
-var bottom_orig_offset = function(){
-	return current_section().offsetHeight + current_section().offsetTop
-}
+		top_orig_offset = function(){
+			return current_section().offsetTop
+		},
 
-var end_offset_y = function(){
-	return top_orig_offset() + last_article().offsetTop
-}
+		bottom_orig_offset = function(){
+			return current_section().offsetHeight + current_section().offsetTop
+		},
+
+		end_offset_y = function(){
+			return top_orig_offset() + last_article().offsetTop
+		}
 
 function doYourMagic(scroll){
 	if(scroll_state == "down" && top_orig_offset() - scroll <= 16) {
@@ -61,7 +74,6 @@ function doYourMagic(scroll){
 	}
 
 	if(scroll_state == "up" && scroll - top_orig_offset() <= -16) {
-		console.log(current_title())
 		current_title().style.position = "absolute"
 		current_title().style.top = "0px"
 		if(current_position > 0) current_position--
@@ -69,13 +81,17 @@ function doYourMagic(scroll){
 	}
 }
 
-function onScroll(e) {
-	var s = window.scrollY
-	scroll_state = s - previousScrollPosition > 0 ? "down" :
+function onScroll() {
+	if(didScroll){
+		didScroll = false
+		var s = window.scrollY
+		scroll_state = s - previousScrollPosition > 0 ? "down" :
 																									s - previousScrollPosition < 0 ? "up" :
 																																							 		 "stoped"
-	doYourMagic(s)
-	previousScrollPosition = s
+		doYourMagic(s)
+		previousScrollPosition = s
+	}
 }
 
-document.addEventListener('scroll', onScroll)
+document.addEventListener('scroll', function() {didScroll = true})
+window.setInterval(onScroll, 20);
