@@ -68,7 +68,7 @@
   position: absolute;
   background: #fff;
   list-style: none;
-  transition: background .2s linear;
+  transition: background .2s ease-in;
 }
 
 .quadrant-2 .radar-arc{
@@ -108,11 +108,6 @@
   color: #fff;
   text-decoration: none;
   border-radius: 100%;
-}
-
-.radar-link.muted,
-.radar-label.muted {
-  cursor: default;
 }
 
 .quadrant-2 .radar-link {
@@ -155,8 +150,13 @@
 .arc-labels {
   width: 8.9em;
   vertical-align: top;
-  padding: 1em .3em;
+  padding: 1em 0.5em;
   display: inline-block;
+  transition: background .2s ease-in;
+}
+
+.arc-labels.hovered {
+  background: #215469;
 }
 
 .arc-labels .title {
@@ -179,6 +179,17 @@
 .radar-label {
   text-decoration: none;
   color: #fff;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.radar-link.muted,
+.radar-label.muted {
+  cursor: default;
 }
 
 /*Effects*/

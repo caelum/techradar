@@ -1,7 +1,7 @@
 <% if @collection.length > 0  : %>
-  <section class="arc-labels">
+  <section class="arc-labels <%- @name %>">
     <h3 class="title label"><%- @name %></h3>
-    <ol class="label-list <%- @name %>">
+    <ol class="label-list">
       <% for item in @collection: %>
           <% if !item.isGroup: %>
             <li id= "label-<%- item.id %>">
