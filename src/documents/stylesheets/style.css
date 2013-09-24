@@ -67,6 +67,7 @@ p {
   min-height: 1em;
   line-height: 1em;
   width: 45%;
+  max-width: 10.8em;
 }
 
 .article-title {
