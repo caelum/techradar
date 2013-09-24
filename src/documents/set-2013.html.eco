@@ -1,9 +1,10 @@
 ---
 layout: default
+title: Caelum Technology Radar
 ---
 <header>
   <div class="container">
-    <img class="header-logo" src="/images/caelum-ensino-e-inovacao.svg" />
+    <img class="header-logo" src="/images/caelum-ensino-e-inovacao.svg" onerror="this.src=this.src.replace('.svg', '.png')" />
     <h1 class="title header-title">Technology Radar</h1>
   </div>
 </header>
