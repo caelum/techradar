@@ -84,7 +84,7 @@ function doYourMagic(scroll){
 function onScroll() {
 	if(didScroll){
 		didScroll = false
-		var s = window.scrollY
+		var s = window.pageYOffset
 		scroll_state = s - previousScrollPosition > 0 ? "down" :
 																									s - previousScrollPosition < 0 ? "up" :
 																																							 		 "stoped"
