@@ -54,6 +54,12 @@ docpadConfig = {
         'articles'
     ]
 
+    environments:
+        development:
+            templateData:
+                site:
+                    url: "http://localhost:9778"
+
     plugins:
         livereload:
             enabled: false
@@ -61,6 +67,10 @@ docpadConfig = {
             hard: false
             symlink: true
             aliases: { '/set-2013': '/' }
+
+    templateData:
+        site:
+            url: "http://radar.caelum.com.br"
 }
 
 module.exports = docpadConfig

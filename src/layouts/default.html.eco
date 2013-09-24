@@ -5,7 +5,7 @@
   <meta property="og:title" content="<%= @document.title %>"/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="http://radar.caelum.com.br">
-  <meta property="og:image" content="/images/caelum-ensino-inovacao-share.jpg">
+  <meta property="og:image" content="<%= @site.url %>/images/caelum-ensino-inovacao-share.jpg">
   <meta property="fb:app_id" content="140078819399376">
   <%- @getBlock("styles").add(["/stylesheets/radar-dots.css", "/stylesheets/radar.css", "/stylesheets/style.css", "http://fonts.googleapis.com/css?family=Oxygen:400,300,700"]).toHTML() %>
   <%- @getBlock("meta").toHTML() %>
