@@ -1,4 +1,5 @@
 var quadrants = document.querySelectorAll(".quadrant")
+var labels_container = document.querySelector(".labels-container")
 
 function getLabel(quadrant){
   var quadrant_class = quadrant.classList.item(1)
@@ -8,11 +9,13 @@ function getLabel(quadrant){
 function quadrantHover() {
   var labels = getLabel(this)
  	labels.classList.add("hovered")
+  labels_container.classList.add("hovered")
 }
 
 function quadrantHoverOut(){
 	var labels = getLabel(this)
   labels.classList.remove("hovered")
+  labels_container.classList.remove("hovered")
 }
 
 function arcHover(){

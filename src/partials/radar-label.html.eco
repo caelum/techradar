@@ -1,19 +1,17 @@
-<% if @collection.length > 0  : %>
-  <section class="arc-labels <%- @name %>">
-    <h3 class="title label"><%- @name %></h3>
-    <ol class="label-list">
-      <% for item in @collection: %>
-          <% if !item.isGroup: %>
-            <li id= "label-<%- item.id %>">
-              <a
-                href= "<%- if item.groupId then "##{item.groupId}" else "##{item.basename}" %>"
-                class= "radar-label <%= if !item.content and !item.groupId then "muted" %>"
-              >
-                <span class="label"><%- item.id %></span>
-                <span><%- item.title %></span>
-              </a>
-          <% end %>
-      <% end %>
-    </ol>
-  </section>
-<% end %>
+<section class="arc-labels <%- @name %>">
+  <h3 class="title label"><%- @name %></h3>
+  <ol class="label-list">
+    <% for item in @collection: %>
+        <% if !item.isGroup: %>
+          <li id= "label-<%- item.id %>">
+            <a
+              href= "<%- if item.groupId then "##{item.groupId}" else "##{item.basename}" %>"
+              class= "radar-label <%= if !item.content and !item.groupId then "muted" %>"
+            >
+              <span class="label"><%- item.id %></span>
+              <span><%- item.title %></span>
+            </a>
+        <% end %>
+    <% end %>
+  </ol>
+</section>

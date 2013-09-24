@@ -135,24 +135,32 @@
 }
 
 .quadrant-labels {
-  opacity: 0;
   font-size: .9em;
+}
+
+.labels-container.hovered .quadrant-labels {
   position: absolute;
-  visibility: hidden;
-  transition: all .2s linear;
 }
 
 .quadrant-labels.hovered {
-  opacity: 1;
-  visibility: visible;
+  background: #204C64;
+  z-index: 1000;
 }
 
 .arc-labels {
+  opacity: 0;
   width: 8.9em;
   vertical-align: top;
   padding: 1em 0.5em;
-  display: inline-block;
+  display: none;
+  visibility: hidden;
   transition: background .2s ease-in;
+}
+
+.quadrant-labels.hovered .arc-labels {
+  opacity: 1;
+  display: inline-block;
+  visibility: visible;
 }
 
 .arc-labels.hovered {
