@@ -36,7 +36,7 @@
 					<img src="<%= @gravatar %>f8874075c078dac246103618745aecb3" class="colaborator-img">
 
 				<li class="colaborator">
-					<span class="colaborator-name">Suelen Goularte Coelho</span>
+					<span class="colaborator-name">Suelen Goularte Carvalho</span>
 					<img src="<%= @gravatar %>0cf1603fb5f74fa40f6b6c96ca573db7" class="colaborator-img">
 
 				<li class="colaborator">
